@@ -1,3 +1,4 @@
+import os
 #!/usr/bin/env python3
 """
 Sekolah Agama Schedule Reminder Bot
@@ -16,8 +17,8 @@ import threading
 # ============================================================
 # CONFIGURATION - Edit these values
 # ============================================================
-BOT_TOKEN = "8580984234:AAEv_YraiQ67dT5RjArz4mlLjViFJGiWlNA"       # From @BotFather
-CHAT_ID = "srada_bot"           # Your child's Telegram chat ID
+BOT_TOKEN = os.environ.get("BOT_TOKEN")       # From @BotFather
+CHAT_ID = os.environ.get("CHAT_ID")           # Your child's Telegram chat ID
 TIMEZONE = "Asia/Kuala_Lumpur"
 
 # Reminder times
